@@ -1,0 +1,43 @@
+body {
+	font-family: Calibri, sans-serif;
+	font-size: 12pt;
+}
+
+.blue {
+	color: #22c;
+	float: right;
+	font-weight: bold;
+}
+
+.header {
+
+}
+
+.point t {
+	left: 5px;
+	position: relative;
+}
+
+.point {
+	font-size: 15pt;
+	font-weight: bold;
+}
+
+.point .content {
+	font-size: 12pt;
+	font-weight: normal;
+}
+
+.point .content table {
+	width: 45%;
+}
+
+.point .content:before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: #22c;
+	left: 0;
+	position: relative;
+}
