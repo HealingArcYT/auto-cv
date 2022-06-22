@@ -1,6 +1,18 @@
+import os
+import sys
+
 import pdfkit
 
 from graphics import AbfrageApp
+
+if sys.platform == "win32":
+    os.environ["PATH"] += r";C:\Users\daniel.moll\auto-cv\wkhtmltox\bin"
+else:
+    try:
+        pdfkit.configuration()
+    except OSError as e:
+        print("You need to install wkhtmltopdf")
+        raise e
 
 options = {
     "page-size": "A4",
